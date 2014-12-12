@@ -1,0 +1,293 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://www.uk-erlangen.de/MDR-System#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.example.org/MyProject/TargetOntology#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Other">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Node_processing_tests"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#IF-GREATER">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Other"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#SUBTR">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#INSTR">
+    <j.0:hasNiceName>INSTR: Smoking Test</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#String_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSEREQUALVT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MULT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MULTVT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Sex">
+    <j.0:hasNiceName>Sex</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATEREQUALVT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#MDR-Context">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Comparisons">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Node_processing_tests"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Test_Score_1">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Integer"/>
+    <j.0:hasNiceName>Test Score 1</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#MDR-Dataelement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Date_of_Lab_Value">
+    <j.0:hasNiceName>Date of Lab Value</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSERT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#ADDVT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#HEAD-TAIL2">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#String"/>
+    <j.0:hasNiceName>HEAD-TAIL: greeting test (without square brackets)</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#String_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#String_Operations">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Node_processing_tests"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATERT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Node_processing_tests">
+    <j.0:hasNiceName>Node Processing Tests</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#SUBTRVT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATEREQUAL">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATER">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSERVT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Test_Score_2">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Integer"/>
+    <j.0:hasNiceName>Test Score 2</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIV">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LCASE">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#String"/>
+    <j.0:hasNiceName>LCASE: small greetings</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#String_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIFF">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Other"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#ADDT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MyProject-Root">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#MDR-Dataelement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Age">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Integer"/>
+    <j.0:hasNiceName>Age</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATEREQUALT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#NOTEXISTS">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Other"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#SUBTRT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#UCASE">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#String"/>
+    <j.0:hasNiceName>UCASE: big greetings</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#String_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Lab_Value">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#PosFloat"/>
+    <j.0:hasNiceName>Lab Value</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIVT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATERVT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Sex-F">
+    <j.0:hasNiceName>Sex = F</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Sex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#ADD">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Node_processing_tests"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSEREQUALT">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIVVT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#HEAD-TAIL">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#String"/>
+    <j.0:hasNiceName>HEAD-TAIL: greeting test (with square brackets)</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#String_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasDataType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Sex-M">
+    <j.0:hasNiceName>Sex = M</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Sex"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Patient_Notes">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#String"/>
+    <j.0:hasNiceName>Patient Notes</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#MyProject-Root"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSEREQUAL">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSER">
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Comparisons"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MULTT">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#Float"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.example.org/MyProject/TargetOntology#Arithmetic_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasNiceName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

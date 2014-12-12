@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:mdr="http://www.uk-erlangen.de/MDR-System#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.uk-erlangen.de/MDR-System">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="MDR-DataType"/>
+  <owl:Class rdf:ID="Exported"/>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Datatype"/>
+  <owl:Class rdf:ID="Unexported"/>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+  <owl:Class rdf:ID="MDR-Context"/>
+  <owl:Class rdf:ID="MDR-Dataelement"/>
+  <owl:Class rdf:ID="MDR-Unit"/>
+  <owl:ObjectProperty rdf:ID="hasUnits">
+    <rdfs:range rdf:resource="#MDR-Unit"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasDataType">
+    <rdfs:range rdf:resource="#MDR-DataType"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="i2b2ConceptCodeProperty">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="i2b2OntoDatatypeProperty"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLowOfToxicValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="i2b2MedicationProperty"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLowOfLowValue">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="i2b2LabValueProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasLowOfHighValue">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#i2b2LabValueProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#i2b2LabValueProperty">
+    <rdfs:subPropertyOf rdf:resource="#i2b2OntoDatatypeProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasHighOfToxicValue">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#i2b2MedicationProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasHighOfLowValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#i2b2LabValueProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasHighOfHighValue">
+    <rdfs:subPropertyOf rdf:resource="#i2b2LabValueProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasFlagsToUse">
+    <rdfs:subPropertyOf rdf:resource="#i2b2OntoDatatypeProperty"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#i2b2MedicationProperty">
+    <rdfs:subPropertyOf rdf:resource="#i2b2OntoDatatypeProperty"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="hasConceptCodePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#i2b2ConceptCodeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#MDR-Context"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDescription">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#i2b2OntoDatatypeProperty"/>
+    <rdfs:domain rdf:resource="#MDR-Dataelement"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasContext">
+    <rdfs:domain rdf:resource="#MDR-Dataelement"/>
+    <rdfs:range rdf:resource="#MDR-Context"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasNiceName">
+    <rdfs:subPropertyOf rdf:resource="#i2b2OntoDatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#MDR-Dataelement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasConceptCodeSuffix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#i2b2ConceptCodeProperty"/>
+    <rdfs:domain rdf:resource="#MDR-Dataelement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <owl:NamedIndividual rdf:ID="Enum">
+        <rdf:type rdf:resource="#MDR-DataType"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="Float">
+        <rdf:type rdf:resource="#MDR-DataType"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="Integer">
+        <rdf:type rdf:resource="#MDR-DataType"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="PosFloat">
+        <rdf:type rdf:resource="#MDR-DataType"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="PosInteger">
+        <rdf:type rdf:resource="#MDR-DataType"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="String">
+        <rdf:type rdf:resource="#MDR-DataType"/>
+      </owl:NamedIndividual>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+  <owl:Datatype/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <owl:NamedIndividual rdf:ID="Not_Implemented_1">
+        <rdf:type rdf:resource="#MDR-Unit"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="Not_Implemented_2">
+        <rdf:type rdf:resource="#MDR-Unit"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="Not_Implemented_3">
+        <rdf:type rdf:resource="#MDR-Unit"/>
+      </owl:NamedIndividual>
+      <owl:NamedIndividual rdf:ID="Not_Implemented_4">
+        <rdf:type rdf:resource="#MDR-Unit"/>
+      </owl:NamedIndividual>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.5, Build 608)  http://protege.stanford.edu -->

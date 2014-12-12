@@ -1,0 +1,729 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.uk-erlangen.de/OntoMappingSystem#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:p1="http://www.uk-erlangen.de/Test#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns="http://www.uk-erlangen.de/DPKK-Mapping#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#EQUALS">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT31">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14397_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14399_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14399_1 Value14712_14397_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF22">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14371_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT18"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14399_3 Value23949_14400_3) Value23949_14371_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping">
+    <owl:imports rdf:resource="file:Soarian.owl"/>
+    <owl:imports rdf:resource="file:DPKK-Datensatz.owl"/>
+    <owl:imports rdf:resource="file:OntoMappingSystem.owl"/>
+    <owl:imports rdf:resource="file:MDR-System.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#ADD">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF2">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14400_1 Value14712_14397_1) (IF (GREATERVT Value14712_14400_1 Value14712_14399_1) Value14712_14372_1)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT26">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14400_3 Value23949_23947_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF16">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF17"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT12"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14398_3 Value23949_14397_3) (IF (GREATERVT Value23949_14398_3 Value23949_14399_3) (IF (GREATERVT Value23949_14398_3 Value23949_14400_3) Value23949_14370_3))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score_1">
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23953_13926_9"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13926_2"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13926_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23955_13926_9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score_Summe">
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23953_13928_8"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_IF2"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_IF1"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13928_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13928_2"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23955_13928_8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT12">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14398_3 Value23949_14397_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT3">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14399_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14400_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14400_1 Value14712_14399_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_NOTEXISTS2">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13926_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13928_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>NOTEXISTS Value14714_13928_3 Value14714_13926_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT32">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14400_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14399_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14399_1 Value14712_14400_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT30">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14398_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14399_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14399_1 Value14712_14398_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF9">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF10"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT9"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_23947_1 Value23949_14399_3) (IF (GREATERVT Value23949_23947_1 Value23949_14400_3) Value23949_23946_1)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF23">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF24"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT19"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14397_3 Value23949_23947_1) (IF (GREATERVT Value23949_14397_3 Value23949_14398_3) (IF (GREATERVT Value23949_14397_3 Value23949_14399_3) (IF (GREATERVT Value23949_14397_3 Value23949_14400_3) Value23949_14369_3)))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT4">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14397_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14398_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14398_1 Value14712_14397_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF1">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14400_1 Value14712_14398_1) (IF (GREATERVT Value14712_14400_1 Value14712_14397_1) (IF (GREATERVT Value14712_14400_1 Value14712_14399_1) Value14712_14372_1))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT25">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14400_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14397_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14397_1 Value14712_14400_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT19">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14397_3 Value23949_23947_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF17">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF18"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT13"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14398_3 Value23949_14399_3) (IF (GREATERVT Value23949_14398_3 Value23949_14400_3) Value23949_14370_3)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score_2">
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23953_13927_9"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13927_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13927_2"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23955_13927_9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF36">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14371_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT32"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14399_1 Value14712_14400_1) Value14712_14371_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT11">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14398_3 Value23949_23947_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#EXISTS">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT9">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_23947_1 Value23949_14399_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF10">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23946_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT10"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_23947_1 Value23949_14400_3) Value23949_23946_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF30">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF31"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT26"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14400_3 Value23949_23947_1) (IF (GREATERVT Value23949_14400_3 Value23949_14397_3) (IF (GREATERVT Value23949_14400_3 Value23949_14398_3) (IF (GREATERVT Value23949_14400_3 Value23949_14399_3) Value23949_14372_3)))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF20">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF21"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT16"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14399_3 Value23949_14397_3) (IF (GREATERVT Value23949_14399_3 Value23949_14398_3) (IF (GREATERVT Value23949_14399_3 Value23949_14400_3) Value23949_14371_3))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF18">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14370_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT14"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14398_3 Value23949_14400_3) Value23949_14370_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_ADD1">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13927_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13926_2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>ADD Value14070_13926_2 Value14070_13927_2</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT24">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14399_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14397_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14397_1 Value14712_14399_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14371_3">
+    <j.0:hasDate rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF4">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF5"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT4"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14398_1 Value14712_14397_1) (IF (GREATERVT Value14712_14398_1 Value14712_14399_1) (IF (GREATERVT Value14712_14398_1 Value14712_14400_1) Value14712_14370_1))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14398_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14400_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14400_1 Value14712_14398_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF28">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF29"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT24"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14397_1 Value14712_14399_1) (IF (GREATERVT Value14712_14397_1 Value14712_14400_1) Value14712_14369_1)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT14">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14398_3 Value23949_14400_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF29">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14369_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT25"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14397_1 Value14712_14400_1) Value14712_14369_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14372_3">
+    <j.0:hasDate rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF11">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF12"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (NOTEXISTS Value14712_14369_1 Value14712_13447_3) (IF (NOTEXISTS Value14712_14370_1 Value14712_13447_3) (IF (NOTEXISTS Value14712_14371_1 Value14712_13447_3) (IF (NOTEXISTS Value14712_14372_1 Value14712_13447_3) Value14712_13447_3)))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF31">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF32"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT27"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14400_3 Value23949_14397_3) (IF (GREATERVT Value23949_14400_3 Value23949_14398_3) (IF (GREATERVT Value23949_14400_3 Value23949_14399_3) Value23949_14372_3))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF21">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF22"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT17"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14399_3 Value23949_14398_3) (IF (GREATERVT Value23949_14399_3 Value23949_14400_3) Value23949_14371_3)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF19">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF20"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT15"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14399_3 Value23949_23947_1) (IF (GREATERVT Value23949_14399_3 Value23949_14397_3) (IF (GREATERVT Value23949_14399_3 Value23949_14398_3) (IF (GREATERVT Value23949_14399_3 Value23949_14400_3) Value23949_14371_3)))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT23">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14398_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14397_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14397_1 Value14712_14398_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATER">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT2">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14397_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14400_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14400_1 Value14712_14397_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF3">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14372_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14400_1 Value14712_14399_1) Value14712_14372_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT13">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14398_3 Value23949_14399_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS2">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_13447_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14370_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>NOTEXISTS Value14712_14370_1 Value14712_13447_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF26">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14369_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT22"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14397_3 Value23949_14400_3) Value23949_14369_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT16">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14399_3 Value23949_14397_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF6">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14370_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT6"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14398_1 Value14712_14400_1) Value14712_14370_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_IF1">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_ADD1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_NOTEXISTS1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (NOTEXISTS Value14070_13928_2 Value14070_13926_2) (ADD Value14070_13926_2 Value14070_13927_2)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF12">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF13"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (NOTEXISTS Value14712_14370_1 Value14712_13447_3) (IF (NOTEXISTS Value14712_14371_1 Value14712_13447_3) (IF (NOTEXISTS Value14712_14372_1 Value14712_13447_3) Value14712_13447_3))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT7">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_23947_1 Value23949_14397_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF33">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14372_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT29"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14400_3 Value23949_14399_3) Value23949_14372_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14370_3">
+    <j.0:hasDate rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_23946_1">
+    <j.0:hasDate rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT22">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14397_3 Value23949_14400_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#PSA-Wert_postoperativ">
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14372_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF27"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23946_1"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14369_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF11"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF34"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF7"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF19"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF1"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF30"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14370_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14371_3"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF15"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF4"/>
+    <j.0:hasImport rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF23"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14369_3">
+    <j.0:hasDate rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF27">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF28"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT23"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14397_1 Value14712_14398_1) (IF (GREATERVT Value14712_14397_1 Value14712_14399_1) (IF (GREATERVT Value14712_14397_1 Value14712_14400_1) Value14712_14369_1))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_ADD2">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13927_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14714_13926_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>ADD Value14714_13926_3 Value14714_13927_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT15">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14399_3 Value23949_23947_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS1">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_13447_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14369_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>NOTEXISTS Value14712_14369_1 Value14712_13447_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF5">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF6"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT5"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14398_1 Value14712_14399_1) (IF (GREATERVT Value14712_14398_1 Value14712_14400_1) Value14712_14370_1)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF13">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF14"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (NOTEXISTS Value14712_14371_1 Value14712_13447_3) (IF (NOTEXISTS Value14712_14372_1 Value14712_13447_3) Value14712_13447_3)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT8">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_23947_1 Value23949_14398_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF32">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF33"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT28"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14400_3 Value23949_14398_3) (IF (GREATERVT Value23949_14400_3 Value23949_14399_3) Value23949_14372_3)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT29">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14400_3 Value23949_14399_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT21">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14397_3 Value23949_14399_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF24">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF25"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT20"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14397_3 Value23949_14398_3) (IF (GREATERVT Value23949_14397_3 Value23949_14399_3) (IF (GREATERVT Value23949_14397_3 Value23949_14400_3) Value23949_14369_3))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF8">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF9"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT8"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_23947_1 Value23949_14398_3) (IF (GREATERVT Value23949_23947_1 Value23949_14399_3) (IF (GREATERVT Value23949_23947_1 Value23949_14400_3) Value23949_23946_1))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasImport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF14">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_13447_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS4"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (NOTEXISTS Value14712_14372_1 Value14712_13447_3) Value14712_13447_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT5">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14399_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14398_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14398_1 Value14712_14399_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasCommandType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT10">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_23947_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_23947_1 Value23949_14400_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT28">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14400_3 Value23949_14398_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF35">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF36"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT31"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14399_1 Value14712_14397_1) (IF (GREATERVT Value14712_14399_1 Value14712_14400_1) Value14712_14371_1)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasOperand1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT18">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14399_3 Value23949_14400_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_NOTEXISTS1">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13926_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14070_13928_2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>NOTEXISTS Value14070_13928_2 Value14070_13926_2</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS4">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_13447_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14372_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>NOTEXISTS Value14712_14372_1 Value14712_13447_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT20">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14397_3 Value23949_14398_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#IF">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_IF2">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_ADD2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_Gleason-Score_Summe_Operation_NOTEXISTS2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (NOTEXISTS Value14714_13928_3 Value14714_13926_3) (ADD Value14714_13926_3 Value14714_13927_3)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF7">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF8"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT7"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_23947_1 Value23949_14397_3) (IF (GREATERVT Value23949_23947_1 Value23949_14398_3) (IF (GREATERVT Value23949_23947_1 Value23949_14399_3) (IF (GREATERVT Value23949_23947_1 Value23949_14400_3) Value23949_23946_1)))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasOperand2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF25">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF26"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT21"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14397_3 Value23949_14399_3) (IF (GREATERVT Value23949_14397_3 Value23949_14400_3) Value23949_14369_3)</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT27">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14397_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14400_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14400_3 Value23949_14397_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF15">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF16"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT11"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value23949_14398_3 Value23949_23947_1) (IF (GREATERVT Value23949_14398_3 Value23949_14397_3) (IF (GREATERVT Value23949_14398_3 Value23949_14399_3) (IF (GREATERVT Value23949_14398_3 Value23949_14400_3) Value23949_14370_3)))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT6">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14400_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14398_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value14712_14398_1 Value14712_14400_1</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF34">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_IF35"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT30"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATERVT Value14712_14399_1 Value14712_14398_1) (IF (GREATERVT Value14712_14399_1 Value14712_14397_1) (IF (GREATERVT Value14712_14399_1 Value14712_14400_1) Value14712_14371_1))</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_NOTEXISTS3">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_13447_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value14712_14371_1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>NOTEXISTS Value14712_14371_1 Value14712_13447_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/UKER-DPKK-Mapping#Result_Of_PSA-Wert_postoperativ_Operation_GREATERVT17">
+    <j.0:hasOperand2 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14398_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.uk-erlangen.de/Soarian#Value23949_14399_3"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Value23949_14399_3 Value23949_14398_3</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+</rdf:RDF>

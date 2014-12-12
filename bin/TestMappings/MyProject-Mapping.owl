@@ -1,0 +1,769 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.uk-erlangen.de/OntoMappingSystem#"
+    xmlns="http://www.example.org/MyProject/MappingOntology#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_DIVT_Operation_DIVT1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>DIVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#DIVT"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_STRPOS1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "]"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#SUBTR">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_SUBTR_Operation_SUBTR1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATEREQUALVT_Operation_GREATEREQUALVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATEREQUALVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATEREQUALVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_TAIL1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_ADD1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#TAIL"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_HEAD1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>TAIL (HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")) (ADD (STRPOS Patient_Notes-Value "[") "1")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#DIFF">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MULTVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_MULTVT_Operation_MULTVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#ADD">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATEREQUALVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATEREQUALVT_Operation_GREATEREQUALVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_NOTEXISTS_Operation_NOTEXISTS1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>NOTEXISTS Test_Score_2-Value Lab_Value-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Lab_Value-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#DIV">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_TAIL1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_ADD1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#TAIL"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_HEAD1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>TAIL (HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")) (ADD (STRPOS Patient_Notes-Value "[") "1")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_STRPOS2">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "["</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_SUBTR_Operation_SUBTR1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>SUBTR Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#SUBTR"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_DIFF_Operation_DIFF1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#DIFF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>DIFF Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LESSER">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_SUBTRT_Operation_SUBTRT1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>SUBTRT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#SUBTRT"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#INSTR_StringNode_1">
+    <j.0:hasStringValue>"smoking"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_STRPOS1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL_StringNode_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "]"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_ADD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_4"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_STRPOS2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>ADD (STRPOS Patient_Notes-Value "[") "1"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Test_Score_1">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LESSEREQUAL">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSERT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSERT_Operation_LESSERT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_MULT_Operation_MULT1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>MULT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#MULT"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#HEAD-TAIL2">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_TAIL1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATERT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATERT_Operation_GREATERT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_HEAD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_STRPOS1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#HEAD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>HEAD Patient_Notes-Value (STRPOS Patient_Notes-Value "]")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#SUBTRVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATEREQUAL_Operation_GREATEREQUAL1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATEREQUAL"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATEREQUAL Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_TAIL1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_STRPOS2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#TAIL"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_HEAD1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>TAIL (HEAD Patient_Notes-Value (STRPOS Patient_Notes-Value "]")) (STRPOS Patient_Notes-Value "[")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_1">
+    <j.0:hasStringValue>"]"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#INSTR_StringNode_2">
+    <j.0:hasStringValue>"lung cancer"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#SUM">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#SUBTRVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_SUBTRVT_Operation_SUBTRVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_STRPOS1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "]"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_DIVVT_Operation_DIVVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#DIVVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>DIVVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSERVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSERVT_Operation_LESSERVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Test_Score_2">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LCASE">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_LCASE1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_SUBTRVT_Operation_SUBTRVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#SUBTRVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>SUBTRVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#ADDT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_ADDT_Operation_ADDT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#MULTT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Age">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Age-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_HEAD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_SUBTR1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#HEAD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LESSERVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_ADDVT_Operation_ADDVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADDVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>ADDVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_INSTR_Operation_INSTR2">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#INSTR_StringNode_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#INSTR"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>INSTR Patient_Notes-Value "lung cancer"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#INSTR">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#NOTEXISTS">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_NOTEXISTS_Operation_NOTEXISTS1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_ADD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_4"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_STRPOS2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>ADD (STRPOS Patient_Notes-Value "[") "1"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#DIVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#SUBTRT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_SUBTRT_Operation_SUBTRT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSERT_Operation_LESSERT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LESSERT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LESSERT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Lab_Value">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Lab_Value-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL_StringNode_1">
+    <j.0:hasStringValue>"]"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATERVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATERVT_Operation_GREATERVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#INSTR_StringNode_3">
+    <j.0:hasStringValue>"Morley"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Sex-F">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Sex-Female"/>
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Sex-F"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#ADD">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_ADD_Operation_ADD1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_HEAD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_SUBTR1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#HEAD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_DIV_Operation_DIV1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>DIV Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#DIV"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_2">
+    <j.0:hasStringValue>"1"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#NOTEXISTS">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#">
+    <owl:imports rdf:resource="file:MyProject-Target.owl"/>
+    <owl:imports rdf:resource="file:MyProject-Source.owl"/>
+    <owl:imports rdf:resource="file:OntoMappingSystem.owl"/>
+    <owl:imports rdf:resource="file:MDR-System.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_STRPOS2">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "["</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATERT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_IF-GREATER_Operation_GREATER1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATER"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATER Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_ADD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_4"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_STRPOS2"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>ADD (STRPOS Patient_Notes-Value "[") "1"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_1">
+    <j.0:hasStringValue>"]"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSEREQUALVT_Operation_LESSEREQUALVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LESSEREQUALVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LESSEREQUALVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_INSTR_Operation_INSTR3">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#INSTR_StringNode_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#INSTR"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>INSTR Patient_Notes-Value "Morley"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Sex-M">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Sex-Male"/>
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Sex-M"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_ADD_Operation_ADD1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>ADD Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADD"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL_StringNode_2">
+    <j.0:hasStringValue>"["</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#HEAD">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Patient_Notes">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSEREQUAL">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSEREQUAL_Operation_LESSEREQUAL1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_3">
+    <j.0:hasStringValue>"["</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATER">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATEREQUAL">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#TAIL">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_5">
+    <j.0:hasStringValue>"NULL"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#MULT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LCASE">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATER_Operation_GREATER1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATER"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATER Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_2">
+    <j.0:hasStringValue>"1"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#IF-GREATER">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_IF-GREATER_Operation_IF1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#INSTR">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_INSTR_Operation_INSTR3"/>
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_INSTR_Operation_INSTR2"/>
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_INSTR_Operation_INSTR1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATEREQUALT_Operation_GREATEREQUALT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATEREQUALT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATEREQUALT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_2">
+    <j.0:hasStringValue>"1"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSEREQUALVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSEREQUALVT_Operation_LESSEREQUALVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSEREQUALT_Operation_LESSEREQUALT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LESSEREQUALT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LESSEREQUALT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#ADDVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MULT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_MULT_Operation_MULT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_SUBTR1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#SUBTR"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_STRPOS1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>SUBTR (STRPOS Patient_Notes-Value "]") "1"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_3">
+    <j.0:hasStringValue>"["</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_LCASE1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_5"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LCASE"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_TAIL1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LCASE (TAIL (HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")) (ADD (STRPOS Patient_Notes-Value "[") "1")) "NULL"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_4">
+    <j.0:hasStringValue>"1"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSEREQUAL_Operation_LESSEREQUAL1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LESSEREQUAL"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LESSEREQUAL Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_1">
+    <j.0:hasStringValue>"]"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_INSTR_Operation_INSTR1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#INSTR_StringNode_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#INSTR"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>INSTR Patient_Notes-Value "smoking"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#Date_of_Lab_Value">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/SourceOntology#Date_of_Lab_Value-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#ADDVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_ADDVT_Operation_ADDVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_3">
+    <j.0:hasStringValue>"["</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATEREQUAL">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATEREQUAL_Operation_GREATEREQUAL1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LESSEREQUALT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATEREQUALVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATER">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATER_Operation_GREATER1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATERVT_Operation_GREATERVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIV">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_DIV_Operation_DIV1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#SUBTR">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSER_Operation_LESSER1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LESSER"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LESSER Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIFF">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_DIFF_Operation_DIFF1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_TAIL1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_ADD1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#TAIL"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_HEAD1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>TAIL (HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")) (ADD (STRPOS Patient_Notes-Value "[") "1")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LESSEREQUALVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_STRPOS1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "]"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasImport">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#GREATEREQUALT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATEREQUALT_Operation_GREATEREQUALT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_SUBTR1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#LCASE_StringNode_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#SUBTR"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_STRPOS1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>SUBTR (STRPOS Patient_Notes-Value "]") "1"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasCommandType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSERVT_Operation_LESSERVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#LESSERVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>LESSERVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#UCASE">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_UCASE1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_DIVT_Operation_DIVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_4">
+    <j.0:hasStringValue>"1"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#GREATEREQUALT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#MULTVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_IF-GREATER_Operation_IF1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#IF"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_IF-GREATER_Operation_GREATER1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>IF (GREATER Test_Score_1-Value Test_Score_2-Value) Test_Score_1-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasOperand1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_HEAD1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LCASE_Operation_SUBTR1"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#HEAD"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_5">
+    <j.0:hasStringValue>"NULL"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#UCASE">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#IF">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_STRPOS2">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL_StringNode_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "["</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_GREATERT_Operation_GREATERT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#GREATERT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>GREATERT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSEREQUALT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSEREQUALT_Operation_LESSEREQUALT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#SUBTRT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#hasOperand2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#DIVVT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_DIVVT_Operation_DIVVT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_STRPOS2">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_3"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#STRPOS"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Patient_Notes-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>STRPOS Patient_Notes-Value "["</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_SUBTR1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#HEAD-TAIL2_StringNode_2"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#SUBTR"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL2_Operation_STRPOS1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>SUBTR (STRPOS Patient_Notes-Value "]") "1"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_MULTVT_Operation_MULTVT1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#MULTVT"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>MULTVT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_MULTT_Operation_MULTT1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>MULTT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#MULTT"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#HEAD-TAIL">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_HEAD-TAIL_Operation_TAIL1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_UCASE1">
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_5"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UCASE"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_UCASE_Operation_TAIL1"/>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:isResultOfExpression>UCASE (TAIL (HEAD Patient_Notes-Value (SUBTR (STRPOS Patient_Notes-Value "]") "1")) (ADD (STRPOS Patient_Notes-Value "[") "1")) "NULL"</j.0:isResultOfExpression>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#LESSERT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#LESSER">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_LESSER_Operation_LESSER1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#DIVVT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/TargetOntology#MULTT">
+    <j.0:hasImport rdf:resource="http://www.example.org/MyProject/MappingOntology#Result_Of_MULTT_Operation_MULTT1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#Result_Of_ADDT_Operation_ADDT1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+    <j.0:isResultOfExpression>ADDT Test_Score_1-Value Test_Score_2-Value</j.0:isResultOfExpression>
+    <j.0:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OntoExportTempTable"/>
+    <j.0:hasOperand1 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_1-Value"/>
+    <j.0:hasCommandType rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ADDT"/>
+    <j.0:hasOperand2 rdf:resource="http://www.example.org/MyProject/SourceOntology#Test_Score_2-Value"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/OntoMappingSystem#ADDT">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#OperationCommand"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/MyProject/MappingOntology#UCASE_StringNode_4">
+    <j.0:hasStringValue>"1"</j.0:hasStringValue>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#UnprocessedItem"/>
+  </rdf:Description>
+</rdf:RDF>

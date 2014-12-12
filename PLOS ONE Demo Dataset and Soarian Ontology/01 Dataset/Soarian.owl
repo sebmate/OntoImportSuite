@@ -1,0 +1,699 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:omsys="http://www.uk-erlangen.de/OntoMappingSystem#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:soa="http://www.uk-erlangen.de/Soarian#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_14714_13927">
+    <soa:hasNiceName>Gleason Score 2</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#BEFPA_KlinBeurt_Organ_14714"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23955_13928_8">
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>(FORMID = 23955 OR FORMID = 23955)</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>COMPONENTID = 13928</omsys:hasSelectFilter>
+    <soa:hasAttribute>Gleason Score 3</soa:hasAttribute>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_23955_13928"/>
+    <soa:hasMaxComponentVersion>8</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>8</soa:hasMinComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum3_23949_14399">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_PSA_23955_13447">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA1_14712_14369">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_14070_13927">
+    <soa:hasNiceName>Gleason Score 2</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo1_2DD_14070"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum3_14712_14399">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712_angelegt">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable_FormExistence"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14070_13926_2">
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_14070_13926"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>5</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 13926</omsys:hasSelectFilter>
+    <soa:hasAttribute>Gleason Score 1</soa:hasAttribute>
+    <omsys:hasSelectFilter>(FORMID = 14070 OR FORMID = 14070)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>2</soa:hasMinComponentVersion>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14714_13928_3">
+    <soa:hasAttribute>Gleason Score 3</soa:hasAttribute>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>COMPONENTID = 13928</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>4</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>(FORMID = 14714 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_14714_13928"/>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA4_23949_14372">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_PSA_14712_13447">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_23955_13928">
+    <soa:hasNiceName>Gleason Score 3</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14370_3">
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 14370</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA2_23949_14370"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum4_23949_14400">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum2_14712_14398">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949_angelegt">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable_FormExistence"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#BEFPA_KlinBeurt_Organ_14714_angelegt">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable_FormExistence"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 14714 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#BEFPA_KlinBeurt_Organ_14714"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_23946_1">
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <soa:hasMaxComponentVersion>1</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA-Wert nach 6 Wochen</soa:hasAttribute>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 23946</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA0_23949_23946"/>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_13447_3">
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_PSA_14712_13447"/>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 13447</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>4</soa:hasMaxComponentVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14369_3">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA1_23949_14369"/>
+    <omsys:hasSelectFilter>COMPONENTID = 14369</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712">
+    <soa:hasNiceName>UR Verlaufsbogen Arzt</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#Soarian_Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Patho_23953">
+    <soa:hasNiceName>Prostata Patho</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#Soarian_Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_23953_13927">
+    <soa:hasNiceName>Gleason Score 2</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Patho_23953"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_23953_13926">
+    <soa:hasNiceName>Gleason Score 1</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Patho_23953"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23953_13927_9">
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <soa:hasMaxComponentVersion>9</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 13927</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23953 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_23953_13927"/>
+    <soa:hasAttribute>Gleason Score 2</soa:hasAttribute>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasMinComponentVersion>9</soa:hasMinComponentVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_23955_13927">
+    <soa:hasNiceName>Gleason Score 2</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14714_13926_3">
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>(FORMID = 14714 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_14714_13926"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMaxComponentVersion>5</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasAttribute>Gleason Score 1</soa:hasAttribute>
+    <omsys:hasSelectFilter>COMPONENTID = 13926</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA4_14712_14372">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949">
+    <soa:hasNiceName>Prostata Verlauf</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#Soarian_Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum1_23949_14397">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_23955_13926">
+    <soa:hasNiceName>Gleason Score 1</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA0_23949_23946">
+    <soa:hasNiceName>PSA-Wert nach 6 Wochen</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14070_13928_2">
+    <soa:hasAttribute>Gleason Score 3</soa:hasAttribute>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_14070_13928"/>
+    <omsys:hasSelectFilter>(FORMID = 14070 OR FORMID = 14070)</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSCalculated</soa:hasEditor>
+    <soa:hasMaxComponentVersion>4</soa:hasMaxComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMinComponentVersion>2</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 13928</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA3_23949_14371">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_14070_13928">
+    <soa:hasNiceName>Gleason Score 3</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo1_2DD_14070"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14369_1">
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA1_14712_14369"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 14369</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_23953_13928">
+    <soa:hasNiceName>Gleason Score 3</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Patho_23953"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14400_3">
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum4_23949_14400"/>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <omsys:hasSelectFilter>COMPONENTID = 14400</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo1_2DD_14070">
+    <soa:hasNiceName>UR Tumordokumentation - Pathologie Befund</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#Soarian_Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14399_3">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum3_23949_14399"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 14399</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA3_14712_14371">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian">
+    <owl:imports rdf:resource="OntoMappingSystem.owl"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum2_23949_14398">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14714_13927_3">
+    <soa:hasAttribute>Gleason Score 2</soa:hasAttribute>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>(FORMID = 14714 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_14714_13927"/>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>COMPONENTID = 13927</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>5</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14398_1">
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum2_14712_14398"/>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 14398</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum0_23949_23947">
+    <soa:hasNiceName>PSA Datum zum PSA nach 6 Wochen</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo1_2DD_14070_angelegt">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable_FormExistence"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 14070 OR FORMID = 14070)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo1_2DD_14070"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14371_1">
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA3_14712_14371"/>
+    <omsys:hasSelectFilter>COMPONENTID = 14371</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14070_13927_2">
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <soa:hasAttribute>Gleason Score 2</soa:hasAttribute>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_14070_13927"/>
+    <omsys:hasSelectFilter>(FORMID = 14070 OR FORMID = 14070)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 13927</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>2</soa:hasMinComponentVersion>
+    <soa:hasMaxComponentVersion>5</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14397_1">
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum1_14712_14397"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 14397</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14371_3">
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 14371</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA3_23949_14371"/>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955_angelegt">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable_FormExistence"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23955 OR FORMID = 23955)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_14714_13926">
+    <soa:hasNiceName>Gleason Score 1</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#BEFPA_KlinBeurt_Organ_14714"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Soarian_Item">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23955_13927_9">
+    <omsys:hasSelectFilter>COMPONENTID = 13927</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>9</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>(FORMID = 23955 OR FORMID = 23955)</omsys:hasSelectFilter>
+    <soa:hasAttribute>Gleason Score 2</soa:hasAttribute>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS2_23955_13927"/>
+    <soa:hasMaxComponentVersion>9</soa:hasMaxComponentVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#BEFPA_KlinBeurt_Organ_14714">
+    <soa:hasNiceName>UR Befund - Organ - TUR - Exzision</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#Soarian_Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Patho_23953_angelegt">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable_FormExistence"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23953 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Patho_23953"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum1_14712_14397">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14372_1">
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA4_14712_14372"/>
+    <omsys:hasSelectFilter>COMPONENTID = 14372</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14399_1">
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <omsys:hasSelectFilter>COMPONENTID = 14399</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum3_14712_14399"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14372_3">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA4_23949_14372"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 14372</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_14070_13926">
+    <soa:hasNiceName>Gleason Score 1</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo1_2DD_14070"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23953_13928_8">
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>8</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 13928</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <soa:hasAttribute>Gleason Score 3</soa:hasAttribute>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_23953_13928"/>
+    <soa:hasMinComponentVersion>8</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>(FORMID = 23953 OR FORMID = 23953)</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA1_23949_14369">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14370_1">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 14370</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA2_14712_14370"/>
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_22_C61_23955">
+    <soa:hasNiceName>Prostata Anam</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#Soarian_Item"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14397_3">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>COMPONENTID = 14397</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum1_23949_14397"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value14712_14400_1">
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum4_14712_14400"/>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <soa:hasMaxComponentVersion>2</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 14400</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>(FORMID = 14712 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_23947_1">
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasMinComponentVersion>1</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasMaxComponentVersion>1</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 23947</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <soa:hasAttribute>PSA Datum zum PSA nach 6 Wochen</soa:hasAttribute>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum0_23949_23947"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum4_14712_14400">
+    <soa:hasNiceName>Untersuchungsdatum</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23949_14398_3">
+    <omsys:hasSelectFilter>COMPONENTID = 14398</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_VDUDatum2_23949_14398"/>
+    <soa:hasMinComponentVersion>3</soa:hasMinComponentVersion>
+    <soa:hasMaxComponentVersion>3</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>(FORMID = 23949 OR FORMID = 23949)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasAttribute>Untersuchungsdatum</soa:hasAttribute>
+    <soa:hasEditor>_CCTDateTime</soa:hasEditor>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23955_13447_6">
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <omsys:hasSelectFilter>(FORMID = 23955 OR FORMID = 23955)</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <soa:hasAttribute>PSA</soa:hasAttribute>
+    <soa:hasMaxComponentVersion>6</soa:hasMaxComponentVersion>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_PSA_23955_13447"/>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>COMPONENTID = 13447</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>6</soa:hasMinComponentVersion>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA2_23949_14370">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_C61_Nachsorge_Arzt_23949"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23953_13926_9">
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <soa:hasAttribute>Gleason Score 1</soa:hasAttribute>
+    <soa:hasMaxComponentVersion>9</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasMinComponentVersion>9</soa:hasMinComponentVersion>
+    <omsys:hasSelectFilter>COMPONENTID = 13926</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_23953_13926"/>
+    <omsys:hasSelectFilter>(FORMID = 23953 OR FORMID = 23953)</omsys:hasSelectFilter>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#Value23955_13926_9">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ProcessedItem"/>
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_GS1_23955_13926"/>
+    <soa:hasAttribute>Gleason Score 1</soa:hasAttribute>
+    <soa:hasMinComponentVersion>9</soa:hasMinComponentVersion>
+    <soa:hasMaxComponentVersion>9</soa:hasMaxComponentVersion>
+    <omsys:hasSelectFilter>VALUE IS NOT NULL</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>ASSESSMENTSTATUS &lt;&gt; 4</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>(FORMID = 23955 OR FORMID = 23955)</omsys:hasSelectFilter>
+    <omsys:hasSelectFilter>VALUE != ' '</omsys:hasSelectFilter>
+    <soa:hasEditor>_DCSNSLE</soa:hasEditor>
+    <omsys:hasSelectFilter>COMPONENTID = 13926</omsys:hasSelectFilter>
+    <omsys:hasSourceTable rdf:resource="http://www.uk-erlangen.de/OntoMappingSystem#ErlangenSTGSoarianTable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_GS3_14714_13928">
+    <soa:hasNiceName>Gleason Score 3</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#BEFPA_KlinBeurt_Organ_14714"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/Soarian#DOKUR_VD_PSA2_14712_14370">
+    <soa:hasNiceName>PSA</soa:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/Soarian#DOKUR_TuThBo2_0VD_14712"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

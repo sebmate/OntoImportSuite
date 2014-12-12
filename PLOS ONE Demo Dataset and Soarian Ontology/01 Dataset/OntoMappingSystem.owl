@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.uk-erlangen.de/OntoMappingSystem#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.uk-erlangen.de/OntoMappingSystem">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="OperationCommand"/>
+  <owl:Class rdf:ID="StringItem">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StatusTypedItem"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="UnprocessedItem">
+    <rdfs:subClassOf rdf:resource="#StatusTypedItem"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SourceTable"/>
+  <owl:Class rdf:ID="DatabaseConnection"/>
+  <owl:Class rdf:ID="ArithmeticOperation">
+    <rdfs:subClassOf rdf:resource="#OperationCommand"/>
+  </owl:Class>
+  <owl:Class rdf:ID="StringOperation">
+    <rdfs:subClassOf rdf:resource="#OperationCommand"/>
+  </owl:Class>
+  <owl:Class rdf:ID="RelationalOperator">
+    <rdfs:subClassOf rdf:resource="#OperationCommand"/>
+  </owl:Class>
+  <owl:Class rdf:ID="ProcessedItem">
+    <rdfs:subClassOf rdf:resource="#StatusTypedItem"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasDate"/>
+  <owl:ObjectProperty rdf:ID="hasImport"/>
+  <owl:ObjectProperty rdf:ID="hasOperand"/>
+  <owl:ObjectProperty rdf:ID="hasDatabaseConnection">
+    <rdfs:range rdf:resource="#DatabaseConnection"/>
+    <rdfs:domain rdf:resource="#SourceTable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasCommandType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasOutputTransformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="CommandProperty"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="#OperationCommand"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="TableDescriptionProperty">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Describes values which are required for creating an SQL command to query data from a database table.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SourceTable"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="DatabaseConnectionProperty">
+    <rdfs:domain rdf:resource="#DatabaseConnection"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Describes values which are used to access a relational database.</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasStringValue"/>
+  <owl:DatatypeProperty rdf:ID="hasSelectFilter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#CommandProperty"/>
+    <rdfs:domain rdf:resource="#OperationCommand"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="isResultOfExpression"/>
+  <owl:DatatypeProperty rdf:ID="hasCaseIDColumn">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="hasPassword">
+    <rdfs:subPropertyOf rdf:resource="#DatabaseConnectionProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >User password.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasUserName">
+    <rdfs:subPropertyOf rdf:resource="#DatabaseConnectionProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Login of database user.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasSourceTableName">
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The tablename itself.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasSID">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Oracle SID.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#DatabaseConnectionProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasOperand2">
+    <rdfs:subPropertyOf rdf:resource="#hasOperand"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasHostName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#DatabaseConnectionProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hostname or IP address of server.</rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDateEndValue">
+    <rdfs:domain rdf:resource="#OperationCommand"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >OP1.DateEndValue</rdf:first>
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</rdf:first>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >OP2.DateEndValue</rdf:first>
+          </rdf:rest>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:subPropertyOf rdf:resource="#CommandProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDateTransformation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The SQL statement to convert a date entry (inside the value column) into a proper "real" date entry.</rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasOperandFetchSQL">
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasPort">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Port of database server.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#DatabaseConnectionProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDateStartValueColumn">
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The column name of the table which stores the start of an observation fact.</rdfs:comment>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDateStartValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range>
+      <owl:DataRange>
+        <owl:oneOf rdf:parseType="Resource">
+          <rdf:rest rdf:parseType="Resource">
+            <rdf:rest rdf:parseType="Resource">
+              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+              >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</rdf:first>
+            </rdf:rest>
+            <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >OP2.DateStartValue</rdf:first>
+          </rdf:rest>
+          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+          >OP1.DateStartValue</rdf:first>
+        </owl:oneOf>
+      </owl:DataRange>
+    </rdfs:range>
+    <rdfs:subPropertyOf rdf:resource="#CommandProperty"/>
+    <rdfs:domain rdf:resource="#OperationCommand"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasAccessSQL">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The generic SQL-command to fetch a set of data.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDateEndValueColumn">
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The column name of the table which stores the end of an observation fact.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasSourceTable">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#SourceTable"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasOperand1">
+    <rdfs:subPropertyOf rdf:resource="#hasOperand"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasDocumentIDColumn">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The column name of the table which stores a uniqe ID to identify one single document/sheet.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasPatientIDColumn">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The column name of the table which stores the patient ID.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasValueColumn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The column name of the table which stores the observation value.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="#TableDescriptionProperty"/>
+  </owl:FunctionalProperty>
+  <RelationalOperator rdf:ID="EQUALS">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value = OP2.Value</hasSelectFilter>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="ONLY1STEXISTS">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NULL</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </RelationalOperator>
+  <SourceTable rdf:ID="OntoExportTempTable">
+    <hasDatabaseConnection>
+      <DatabaseConnection rdf:ID="DestConnection">
+        <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >xxxxxx.med.uni-erlangen.de</hasHostName>
+        <hasUserName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >I2B2SANDKASTEN</hasUserName>
+        <hasSID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >cognt</hasSID>
+        <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >1514</hasPort>
+        <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >xxxxxxxxxxxxxxxxx</hasPassword>
+      </DatabaseConnection>
+    </hasDatabaseConnection>
+    <hasSourceTableName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >I2B2_DPKK.OntoExportTemp</hasSourceTableName>
+    <hasDateTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_DATE($VALUE$, 'YYYYMMDD')</hasDateTransformation>
+    <hasDateEndValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >EndDate</hasDateEndValueColumn>
+    <hasDateStartValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >StartDate</hasDateStartValueColumn>
+    <hasDocumentIDColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DocumentID</hasDocumentIDColumn>
+    <hasPatientIDColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PatientID</hasPatientIDColumn>
+    <hasOperandFetchSQL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SELECT DISTINCT $PATIENTID$ PatientID, $DOCUMENTID$ DocumentID,      $DATESTARTVALUE$ DateStartValue, $DATEENDVALUE$ DateEndValue, $VALUE$      Value FROM $SOURCETABLE$ WHERE $SOURCEFILTER$</hasOperandFetchSQL>
+    <hasValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Value</hasValueColumn>
+    <hasAccessSQL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SELECT DISTINCT $NODENAME$ NodeName, (CASE WHEN OP1.DocumentID IS NULL AND OP2.DocumentID IS NOT NULL THEN OP2.DocumentID ELSE OP1.DocumentID END) DocumentID, (CASE WHEN OP1.PatientID IS NULL AND OP2.PatientID IS NOT NULL THEN OP2.PatientID ELSE OP1.PatientID END) DocumentID, $DATESTARTVALUE$ DateStartValue, $DATEENDVALUE$ DateEndValue, $OUTPUT$ Value  FROM ($OPERANDFETCHSQL1$) OP1 FULL OUTER JOIN ($OPERANDFETCHSQL2$) OP2 ON OP1.DocumentID = OP2.DocumentID $RESULTFILTER$</hasAccessSQL>
+  </SourceTable>
+  <ArithmeticOperation rdf:ID="DIFF">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.Value &gt; OP2.Value THEN TO_CHAR(OP1.Value - OP2.Value)       WHEN OP1.Value &lt; OP2.Value THEN TO_CHAR(OP2.Value - OP1.Value) ELSE '0' END)</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </ArithmeticOperation>
+  <ArithmeticOperation rdf:ID="ADD">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_CHAR(OP1.Value + OP2.Value)</hasOutputTransformation>
+  </ArithmeticOperation>
+  <ArithmeticOperation rdf:ID="DIV">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_CHAR(OP1.Value / OP2.Value)</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </ArithmeticOperation>
+  <RelationalOperator rdf:ID="LESSER">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &lt; OP2.Value</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="EQUALST">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value = OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value = 0 AND OP2.Value IS NULL)</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="LESSEREQUAL">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &lt;= OP2.Value</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+  </RelationalOperator>
+  <ArithmeticOperation rdf:ID="SUBTRVT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.Value IS NULL AND OP2.Value IS NOT NULL THEN TO_CHAR(-OP2.Value)       WHEN OP2.Value IS NULL AND OP1.Value IS NOT NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value - OP2.Value) END)</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+  </ArithmeticOperation>
+  <DatabaseConnection rdf:ID="ErlangenSoarianConnection">
+    <hasPort rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1514</hasPort>
+    <hasPassword rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >xxxxxxxxxxxxxxxxx</hasPassword>
+    <hasHostName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >xxxxxx.med.uni-erlangen.de</hasHostName>
+    <hasSID rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cognt</hasSID>
+    <hasUserName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >STG_SOARIAN</hasUserName>
+  </DatabaseConnection>
+  <RelationalOperator rdf:ID="EXISTS">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="ONLY2NDEXISTS">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.DateEndValue</hasDateEndValue>
+  </RelationalOperator>
+  <ArithmeticOperation rdf:ID="MULTT">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP2.Value IS NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value * OP2.Value) END)</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </ArithmeticOperation>
+  <RelationalOperator rdf:ID="LESSERVT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &lt; OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &lt; 0 AND OP1.Value IS NULL) OR (OP2.Value IS NOT NULL AND OP2.Value &gt; 0 AND OP1.Value IS NULL)</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+  </RelationalOperator>
+  <StringOperation rdf:ID="INSTR">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND INSTR(OP1.Value, OP2.Value) &gt; 0</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+  </StringOperation>
+  <ArithmeticOperation rdf:ID="DIVT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP2.Value IS NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value / OP2.Value) END)</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL</hasSelectFilter>
+  </ArithmeticOperation>
+  <RelationalOperator rdf:ID="NOTEXISTS">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.DateEndValue</hasDateEndValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+  </RelationalOperator>
+  <owl:DataRange>
+    <owl:oneOf rdf:parseType="Resource">
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Operand2PatientID</rdf:first>
+      </rdf:rest>
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >Operand1PatientID</rdf:first>
+    </owl:oneOf>
+  </owl:DataRange>
+  <RelationalOperator rdf:ID="GREATERT">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt; OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &gt; 0 AND OP2.Value IS NULL)</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </RelationalOperator>
+  <StringOperation rdf:ID="HEAD">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Returns the head of the sting until position in OP2.Value</rdfs:comment>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUBSTR(OP1.Value, 1, OP2.Value)</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </StringOperation>
+  <SourceTable rdf:ID="ErlangenSTGSoarianTable">
+    <hasDateTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_DATE($VALUE$, 'YYYYMMDD')</hasDateTransformation>
+    <hasDocumentIDColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ASSESSMENTID</hasDocumentIDColumn>
+    <hasSourceTableName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >STG_SOARIAN.DWH_NUTZDATEN_UR</hasSourceTableName>
+    <hasDatabaseConnection rdf:resource="#DestConnection"/>
+    <hasOperandFetchSQL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SELECT DISTINCT $PATIENTID$ PatientID, $DOCUMENTID$ DocumentID, $DATESTARTVALUE$ DateStartValue, $DATEENDVALUE$ DateEndValue, $VALUE$ Value FROM $SOURCETABLE$ WHERE $SOURCEFILTER$</hasOperandFetchSQL>
+    <hasValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VALUE</hasValueColumn>
+    <hasDateStartValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >COMPSAVEDDT</hasDateStartValueColumn>
+    <hasAccessSQL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SELECT DISTINCT $NODENAME$ NodeName, (CASE WHEN OP1.DocumentID IS NULL AND OP2.DocumentID IS NOT NULL THEN OP2.DocumentID ELSE OP1.DocumentID END) DocumentID, (CASE WHEN OP1.PatientID IS NULL AND OP2.PatientID IS NOT NULL THEN OP2.PatientID ELSE OP1.PatientID END) DocumentID, $DATESTARTVALUE$ DateStartValue, $DATEENDVALUE$ DateEndValue, $OUTPUT$ Value  FROM ($OPERANDFETCHSQL1$) OP1 FULL OUTER JOIN ($OPERANDFETCHSQL2$) OP2 ON OP1.DocumentID = OP2.DocumentID $RESULTFILTER$</hasAccessSQL>
+    <hasPatientIDColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PATID</hasPatientIDColumn>
+    <hasDateEndValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >COMPSAVEDDT</hasDateEndValueColumn>
+  </SourceTable>
+  <RelationalOperator rdf:ID="GREATER">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt; OP2.Value</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="GREATEREQUAL">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt;= OP2.Value</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+  </RelationalOperator>
+  <StringOperation rdf:ID="TAIL">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SUBSTR(OP1.Value, OP2.Value)</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Returns the tail of the sting, beginning at the position in OP2.Value</rdfs:comment>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+  </StringOperation>
+  <RelationalOperator rdf:ID="GREATERVT">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt; OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &gt; 0 AND OP2.Value IS NULL) OR (OP2.Value IS NOT NULL AND OP2.Value &lt; 0 AND OP1.Value IS NULL)</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+  </RelationalOperator>
+  <StringOperation rdf:ID="STRPOS2">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INSTR(OP1.Value, OP2.Value)</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+  </StringOperation>
+  <StringOperation rdf:ID="LCASE">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >LOWER(OP1.Value)</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL</hasSelectFilter>
+  </StringOperation>
+  <ArithmeticOperation rdf:ID="MULT">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_CHAR(OP1.Value * OP2.Value)</hasOutputTransformation>
+  </ArithmeticOperation>
+  <ArithmeticOperation rdf:ID="ADDVT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.Value IS NULL AND OP2.Value IS NOT NULL THEN OP2.Value       WHEN OP2.Value IS NULL AND OP1.Value IS NOT NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value + OP2.Value) END)</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+  </ArithmeticOperation>
+  <SourceTable rdf:ID="ErlangenSTGSoarianTable_FormExistence">
+    <hasDocumentIDColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ASSESSMENTID</hasDocumentIDColumn>
+    <hasAccessSQL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SELECT DISTINCT $NODENAME$ NodeName, (CASE WHEN OP1.DocumentID IS NULL AND OP2.DocumentID IS NOT NULL THEN OP2.DocumentID ELSE OP1.DocumentID END) DocumentID, (CASE WHEN OP1.PatientID IS NULL AND OP2.PatientID IS NOT NULL THEN OP2.PatientID ELSE OP1.PatientID END) DocumentID, $DATESTARTVALUE$ DateStartValue, $DATEENDVALUE$ DateEndValue, $OUTPUT$ Value  FROM ($OPERANDFETCHSQL1$) OP1 FULL OUTER JOIN ($OPERANDFETCHSQL2$) OP2 ON OP1.DocumentID = OP2.DocumentID $RESULTFILTER$</hasAccessSQL>
+    <hasDatabaseConnection rdf:resource="#DestConnection"/>
+    <hasDateEndValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >FORMREFEREDDT</hasDateEndValueColumn>
+    <hasDateStartValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >FORMREFEREDDT</hasDateStartValueColumn>
+    <hasDateTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_DATE($VALUE$, 'YYYYMMDD')</hasDateTransformation>
+    <hasOperandFetchSQL rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SELECT DISTINCT $PATIENTID$ PatientID, $DOCUMENTID$ DocumentID, $DATESTARTVALUE$ DateStartValue, $DATEENDVALUE$ DateEndValue, $VALUE$ Value FROM $SOURCETABLE$ WHERE $SOURCEFILTER$</hasOperandFetchSQL>
+    <hasValueColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'True'</hasValueColumn>
+    <hasPatientIDColumn rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PATID</hasPatientIDColumn>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diese "virtuelle Tabelle" ist nur dazu da, um die Existenzprüfungen der Forms durchführen zu können!</rdfs:comment>
+    <hasSourceTableName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >STG_SOARIAN.DWH_NUTZDATEN_UR</hasSourceTableName>
+  </SourceTable>
+  <owl:DataRange>
+    <owl:oneOf rdf:parseType="Resource">
+      <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >Operand1DocumentID</rdf:first>
+      <rdf:rest rdf:parseType="Resource">
+        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Operand2DocumentID</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:rest>
+    </owl:oneOf>
+  </owl:DataRange>
+  <RelationalOperator rdf:ID="LESSEREQUALT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &lt;= OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &lt;= 0 AND OP1.Value IS NULL)</hasSelectFilter>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="GREATEREQUALVT">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt;= OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &gt;= 0 AND OP2.Value IS NULL) OR (OP2.Value IS NOT NULL AND OP2.Value &lt;= 0 AND OP1.Value IS NULL)</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+  </RelationalOperator>
+  <ArithmeticOperation rdf:ID="SUBTR">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO_CHAR(OP1.Value - OP2.Value)</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL</hasSelectFilter>
+  </ArithmeticOperation>
+  <StringOperation rdf:ID="STRPOS">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND INSTR(OP1.Value, OP2.Value) &gt; 0</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >INSTR(OP1.Value, OP2.Value)</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </StringOperation>
+  <RelationalOperator rdf:ID="LESSEREQUALVT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value = OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value = 0 AND OP1.Value IS NULL) OR (OP2.Value IS NOT NULL AND OP2.Value &gt;= 0 AND OP1.Value IS NULL)</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="GREATEREQUALT">
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt;= OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &gt;= 0 AND OP2.Value IS NULL)</hasSelectFilter>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+  </RelationalOperator>
+  <RelationalOperator rdf:ID="EQUALSVT">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &gt; OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value = 0 AND OP2.Value IS NULL) OR (OP2.Value IS NOT NULL AND OP2.Value = 0 AND OP1.Value IS NULL)</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+  </RelationalOperator>
+  <ArithmeticOperation rdf:ID="MULTVT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.Value IS NULL AND OP2.Value IS NOT NULL THEN '0'       WHEN OP2.Value IS NULL AND OP1.Value IS NOT NULL THEN '0'       ELSE TO_CHAR(OP1.Value * OP2.Value) END)</hasOutputTransformation>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+  </ArithmeticOperation>
+  <StringOperation rdf:ID="UCASE">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >UPPER(OP1.Value)</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </StringOperation>
+  <RelationalOperator rdf:ID="IF">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.Value</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value = 'TRUE' AND OP2.Value IS NOT NULL</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.DateStartValue</hasDateStartValue>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP2.DateEndValue</hasDateEndValue>
+  </RelationalOperator>
+  <ArithmeticOperation rdf:ID="SUBTRT">
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP2.Value IS NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value - OP2.Value) END)</hasOutputTransformation>
+  </ArithmeticOperation>
+  <RelationalOperator rdf:ID="LESSERT">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >'TRUE'</hasOutputTransformation>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(OP1.Value IS NOT NULL AND OP2.Value IS NOT NULL AND OP1.Value &lt; OP2.Value) OR (OP1.Value IS NOT NULL AND OP1.Value &lt; 0 AND OP1.Value IS NULL)</hasSelectFilter>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+  </RelationalOperator>
+  <ArithmeticOperation rdf:ID="DIVVT">
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateEndValue IS NULL AND OP2.DateEndValue IS NOT NULL THEN OP2.DateEndValue ELSE OP1.DateEndValue END)</hasDateEndValue>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.DateStartValue IS NULL AND OP2.DateStartValue IS NOT NULL THEN OP2.DateStartValue ELSE OP1.DateStartValue END)</hasDateStartValue>
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP1.Value IS NULL AND OP2.Value IS NOT NULL THEN '0'       WHEN OP2.Value IS NULL AND OP1.Value IS NOT NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value / OP2.Value) END)</hasOutputTransformation>
+  </ArithmeticOperation>
+  <ArithmeticOperation rdf:ID="ADDT">
+    <hasOutputTransformation rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >(CASE WHEN OP2.Value IS NULL THEN OP1.Value       ELSE TO_CHAR(OP1.Value + OP2.Value) END)</hasOutputTransformation>
+    <hasDateStartValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateStartValue</hasDateStartValue>
+    <hasSelectFilter rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.Value IS NOT NULL</hasSelectFilter>
+    <hasDateEndValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >OP1.DateEndValue</hasDateEndValue>
+  </ArithmeticOperation>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.5, Build 608)  http://protege.stanford.edu -->

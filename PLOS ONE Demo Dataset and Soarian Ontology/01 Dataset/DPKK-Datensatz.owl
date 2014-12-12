@@ -1,0 +1,104 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.0="http://www.uk-erlangen.de/MDR-System#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://www.dpkk.de/Datensatz#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasConceptCodePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#MDR-Dataelement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasDataType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#DPKK-Datenelement">
+    <j.0:hasDescription>Version vom 16.03.2012</j.0:hasDescription>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>DPKK-Datenelement</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#MDR-Dataelement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score">
+    <j.0:hasConceptCodeSuffix>149-GleaScor</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>Gleason-Score</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#Pathologie"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Follow-Up">
+    <j.0:hasConceptCodeSuffix>83-FollUp</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>Follow-Up</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#DPKK-Datenelement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#MDR-Context">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#DPKK-Context">
+    <rdf:type rdf:resource="http://www.uk-erlangen.de/MDR-System#MDR-Context"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Pathologie">
+    <j.0:hasConceptCodeSuffix>143-Path</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>Pathologie</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#DPKK-Datenelement"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score_1">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#PosInteger"/>
+    <j.0:hasDescription>Wert des Gleason-Scores 1</j.0:hasDescription>
+    <j.0:hasConceptCodeSuffix>150-GleaScor1</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>Gleason-Score 1</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#Gleason-Score"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score_Summe">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#PosInteger"/>
+    <j.0:hasDescription>Summe von Gleason-Score 1 und 2</j.0:hasDescription>
+    <j.0:hasConceptCodeSuffix>152-GleaScorSumm</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>Gleason-Score Summe</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#Gleason-Score"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#Gleason-Score_2">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#PosInteger"/>
+    <j.0:hasDescription>Wert des Gleason-Scores 2</j.0:hasDescription>
+    <j.0:hasConceptCodeSuffix>151-GleaScor2</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>Gleason-Score 2</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#Gleason-Score"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasConceptCodeSuffix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.dpkk.de/Datensatz#PSA-Wert_postoperativ">
+    <j.0:hasDataType rdf:resource="http://www.uk-erlangen.de/MDR-System#PosFloat"/>
+    <j.0:hasDescription>Wert des prostataspezifischen Antigens (postoperativ)</j.0:hasDescription>
+    <j.0:hasConceptCodeSuffix>84-PsaWertPost</j.0:hasConceptCodeSuffix>
+    <j.0:hasConceptCodePrefix>DPKK</j.0:hasConceptCodePrefix>
+    <j.0:hasNiceName>PSA-Wert (postoperativ)</j.0:hasNiceName>
+    <rdfs:subClassOf rdf:resource="http://www.uk-erlangen.de/MDR-System#Exported"/>
+    <rdfs:subClassOf rdf:resource="http://www.dpkk.de/Datensatz#Follow-Up"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.uk-erlangen.de/MDR-System#hasNiceName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>
